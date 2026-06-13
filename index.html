@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alvin &amp; Risma Wedding Invitation</title>
-    <link rel="icon" type="image/png" href="https://s13.gifyu.com/images/bI1Ly.png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s13.gifyu.com/images/bI1Ly.png"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -146,8 +150,6 @@
         letter-spacing: 0;
       }
 
-
-
       .mercusuar-wrap {
         position: absolute;
         bottom: 0;
@@ -164,7 +166,7 @@
       .lighthouse-beam-wrap {
         position: absolute;
         bottom: 88%; /* Letak lampu relatif terhadap tinggi mercusuar */
-        left: 50%;   /* Letak lampu relatif terhadap lebar mercusuar */
+        left: 50%; /* Letak lampu relatif terhadap lebar mercusuar */
         width: 100%;
         transform: translateX(-50%);
         z-index: 2;
@@ -173,12 +175,10 @@
       .kapal {
         position: absolute;
         animation: boatFloat 4s ease-in-out infinite;
-                      width: 10%;
-              right: 10%;
-              bottom: 23.5%;
-              z-index: 3;
-              
-
+        width: 10%;
+        right: 10%;
+        bottom: 23.5%;
+        z-index: 3;
       }
       .ombak {
         position: absolute;
@@ -188,12 +188,12 @@
         z-index: 3;
         animation: seaMove 12s linear infinite;
       }
-      .ombakwrap{
-                      position: absolute;
-              bottom: -4%;
-              left: 0;
-              width: 100%;
-              height: auto;
+      .ombakwrap {
+        position: absolute;
+        bottom: -4%;
+        left: 0;
+        width: 100%;
+        height: auto;
       }
       .open-btn {
         position: absolute;
@@ -247,12 +247,16 @@
           transform: translateY(-12px);
         }
       }
-@keyframes seaMove {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
+      @keyframes seaMove {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
 
-/* @keyframes seaScroll {
+      /* @keyframes seaScroll {
   from {
     background-position: 0 bottom;
     -webkit-mask-position: 0 0;
@@ -359,7 +363,7 @@
         white-space: nowrap;
         z-index: 2;
       }
-          
+
       .corner-ornament {
         position: absolute;
         width: 0px;
@@ -528,7 +532,6 @@
         margin-bottom: 24px;
       }
 
-
       .date-ornament-col {
         display: flex;
         flex-direction: column;
@@ -598,10 +601,12 @@
       /* COUPLE */
       #couple {
         position: relative;
-        overflow: hidden;
-        background: url("https://s13.gifyu.com/images/bIouF.png") no-repeat center top fixed;
-        background-size: cover;
+        /* overflow: hidden;
+        background: url("https://s13.gifyu.com/images/bIouF.png") no-repeat
+          center top fixed;
+        background-size: cover; */
         padding-bottom: 100px;
+        background: transparent;
       }
 
       .couple-card {
@@ -915,12 +920,7 @@
       /* STORY */
       #story {
         padding: 0;
-        overflow: hidden;
         position: relative;
-                background: url("https://s13.gifyu.com/images/bIouU.png") no-repeat center top fixed;
-        background-size: cover;
-        position: relative;
-        overflow: hidden;
       }
 
       .story-header {
@@ -1363,11 +1363,7 @@
         align-items: center;
         justify-content: center;
         padding: 60px 24px 100px;
-        overflow: hidden;
-        background: url("https://s13.gifyu.com/images/bIouU.png") no-repeat center top fixed;
-        background-size: cover;
         position: relative;
-        overflow: hidden;
       }
       .tick-pop {
         transform: scale(1.18);
@@ -1387,7 +1383,7 @@
         opacity: 0.22;
         mix-blend-mode: luminosity;
       } */
-/* 
+      /* 
       .cd-bg::after {
         content: "";
         position: absolute;
@@ -2260,12 +2256,16 @@
           transform: translateY(-10px);
         }
       }
-@keyframes seaMove {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
+      @keyframes seaMove {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
 
-/* @keyframes seaScroll {
+      /* @keyframes seaScroll {
   from {
     background-position: 0 bottom;
     -webkit-mask-position: 0 0;
@@ -2475,10 +2475,10 @@
 
         } */
         .kapal {
-               width: 10%;
-              right: 10%;
-              bottom: 23.5%;
-                animation: boatFloat 6s ease-in-out infinite;
+          width: 10%;
+          right: 10%;
+          bottom: 23.5%;
+          animation: boatFloat 6s ease-in-out infinite;
           /* right: 0%; */
         }
         .rasi1,
@@ -2502,23 +2502,23 @@
         }
       }
       @media (max-width: 412px) {
-        .kapal{
+        .kapal {
           bottom: 23.4%;
         }
       }
       @media (max-width: 380px) {
-        .ombakwrap{
+        .ombakwrap {
           bottom: -2%;
         }
-        .kapal{
+        .kapal {
           bottom: 22.5%;
         }
       }
       @media (max-width: 360px) {
-        .kapal{
-              bottom: 22.5%;
+        .kapal {
+          bottom: 22.5%;
         }
-        .ombakwrap{
+        .ombakwrap {
           bottom: -1%;
         }
       }
@@ -2924,15 +2924,17 @@
         justify-content: flex-start;
         padding: 15vh 24px 100px;
         position: relative;
-        background:
+        background: transparent;
+        /* background:
           radial-gradient(
             ellipse 100% 60% at 50% -5%,
             #112068 0%,
             transparent 55%
           ),
-          url("https://s13.gifyu.com/images/bIouF.png") no-repeat center top fixed;
-        background-size: cover;
-        overflow: hidden;
+          url("https://s13.gifyu.com/images/bIouF.png") no-repeat center top
+            fixed;
+        background-size: cover; */
+        /* overflow: hidden; */
       }
 
       .corner-ornament {
@@ -3109,7 +3111,6 @@
           opacity: 0.85;
         }
       }
-
 
       .date-ornament-col {
         display: flex;
@@ -3345,13 +3346,36 @@
           opacity: 0;
         }
       }
-      .combined-bg {
-  background: 
-    linear-gradient(to bottom, rgba(3,9,24,0.7) 0%, transparent 15%),
-    url("https://s13.gifyu.com/images/bIouU.png") no-repeat center top,
-    url("https://s13.gifyu.com/images/bIouC.png") no-repeat center bottom;
-  background-size: cover, cover, cover;
-}
+      #events {
+        background-image: url("https://s13.gifyu.com/images/bIAsE.png");
+
+        /* 'cover' memastikan gambar memenuhi seluruh ruang kosong tanpa merusak rasio,
+     sangat baik untuk layar dengan ukuran bervariasi. */
+        background-size: cover;
+
+        /* Mulai gambar dari tengah atas agar bagian bintang di Hero tidak terpotong */
+        background-position: center top;
+
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+      }
+      #countdown {
+        background-image: url("https://s13.gifyu.com/images/bIAs9.png");
+
+        /* 'cover' memastikan gambar memenuhi seluruh ruang kosong tanpa merusak rasio,
+     sangat baik untuk layar dengan ukuran bervariasi. */
+        background-size: cover;
+
+        /* Mulai gambar dari tengah atas agar bagian bintang di Hero tidak terpotong */
+        background-position: center top;
+
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+      }
     </style>
   </head>
   <body>
@@ -3359,8 +3383,16 @@
     <div id="cover">
       <div class="cover-inner reveal">
         <img src="https://s13.gifyu.com/images/bIouC.png" class="bg" alt="" />
-        <img src="https://s13.gifyu.com/images/bIon5.png" class="rasi1" alt="" />
-        <img src="https://s13.gifyu.com/images/bIont.png" class="rasi2" alt="" />
+        <img
+          src="https://s13.gifyu.com/images/bIon5.png"
+          class="rasi1"
+          alt=""
+        />
+        <img
+          src="https://s13.gifyu.com/images/bIont.png"
+          class="rasi2"
+          alt=""
+        />
 
         <div class="cover-couple">
           <h1>Alvin &amp; Risma</h1>
@@ -3383,11 +3415,7 @@
           "
         >
           <!-- 1. Ombak (paling bawah) -->
-          <div class="ombakwrap"
-            style="
-              overflow: hidden;
-            "
-          >
+          <div class="ombakwrap" style="overflow: hidden">
             <div
               style="
                 display: flex;
@@ -3462,9 +3490,7 @@
           <img
             src="https://s13.gifyu.com/images/bIouO.png"
             class="kapal"
-            style="
-              animation: boatFloat 4s ease-in-out infinite;
-            "
+            style="animation: boatFloat 4s ease-in-out infinite"
             alt=""
           />
         </div>
@@ -3480,70 +3506,92 @@
       <button id="musicBtn" onclick="toggleMusic()" aria-label="Toggle music">
         ▶
       </button>
-      <section id="hero">
-        <canvas id="star-canvas"></canvas>
+      <div
+        class="bg1"
+        style="
+          background-image: url(&quot;https://s13.gifyu.com/images/bIAs3.png&quot;);
+          background-size: cover;
 
-        <div class="shooting-star s1"></div>
-        <div class="shooting-star s2"></div>
-        <div class="shooting-star s3"></div>
+          background-position: center top;
 
-        <svg
-          class="constellation"
-          viewBox="0 0 400 200"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          style="
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            pointer-events: none;
-          "
-        >
-          <g
-            stroke="rgba(215,181,109,0.6)"
-            stroke-width="0.6"
-            fill="rgba(215,181,109,0.8)"
+          background-repeat: no-repeat;
+          width: 100%;
+          min-height: 100vh;
+          position: relative;
+        "
+      >
+        <section id="hero">
+          <canvas id="star-canvas"></canvas>
+
+          <div class="shooting-star s1"></div>
+          <div class="shooting-star s2"></div>
+          <div class="shooting-star s3"></div>
+
+          <svg
+            class="constellation"
+            viewBox="0 0 400 200"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 200px;
+              pointer-events: none;
+            "
           >
-            <line x1="30" y1="60" x2="60" y2="45" />
-            <line x1="60" y1="45" x2="90" y2="55" />
-            <line x1="90" y1="55" x2="75" y2="80" />
-            <line x1="75" y1="80" x2="50" y2="90" />
-            <circle cx="30" cy="60" r="1.5" />
-            <circle cx="60" cy="45" r="2" />
-            <circle cx="90" cy="55" r="1.5" />
-            <circle cx="75" cy="80" r="1" />
-            <circle cx="50" cy="90" r="1.5" />
-          </g>
-        </svg>
+            <g
+              stroke="rgba(215,181,109,0.6)"
+              stroke-width="0.6"
+              fill="rgba(215,181,109,0.8)"
+            >
+              <line x1="30" y1="60" x2="60" y2="45" />
+              <line x1="60" y1="45" x2="90" y2="55" />
+              <line x1="90" y1="55" x2="75" y2="80" />
+              <line x1="75" y1="80" x2="50" y2="90" />
+              <circle cx="30" cy="60" r="1.5" />
+              <circle cx="60" cy="45" r="2" />
+              <circle cx="90" cy="55" r="1.5" />
+              <circle cx="75" cy="80" r="1" />
+              <circle cx="50" cy="90" r="1.5" />
+            </g>
+          </svg>
 
-        <div class="corner-ornament tl reveal"></div>
-        <div class="corner-ornament tr reveal"></div>
-        <div class="corner-ornament bl reveal"></div>
-        <div class="corner-ornament br reveal"></div>
+          <div class="corner-ornament tl reveal"></div>
+          <div class="corner-ornament tr reveal"></div>
+          <div class="corner-ornament bl reveal"></div>
+          <div class="corner-ornament br reveal"></div>
 
-        <div class="hex-wrap reveal">
-          <div class="hex-orbit"></div>
-          <div class="hex-border-ring"></div>
-          <div class="hex-inner">
-            <img src="https://s13.gifyu.com/images/bIoqT.jpg" alt="Foto Alvin & Risma" style="transform: scale(1) translateY(-13%);"/>
+          <div class="hex-wrap reveal">
+            <div class="hex-orbit"></div>
+            <div class="hex-border-ring"></div>
+            <div class="hex-inner">
+              <img
+                src="https://s13.gifyu.com/images/bIoqT.jpg"
+                alt="Foto Alvin & Risma"
+                style="transform: scale(1) translateY(-13%)"
+              />
+            </div>
+            <div class="hex-top-ornament">◆</div>
+            <div class="hex-bot-ornament">◆</div>
           </div>
-          <div class="hex-top-ornament">◆</div>
-          <div class="hex-bot-ornament">◆</div>
-        </div>
-        <div class="reveal" style="text-align: center;">
-          <div class="hero-names">
-            ALVIN <span class="amp">&amp;</span> RISMA
+          <div class="reveal" style="text-align: center">
+            <div class="hero-names">
+              ALVIN <span class="amp">&amp;</span> RISMA
+            </div>
+            <div class="hero-tagline">Dua Bintang, Satu Semesta</div>
           </div>
-          <div class="hero-tagline">Dua Bintang, Satu Semesta</div>
-        </div>
-        <div class="date reveal">
-          <img src="https://s13.gifyu.com/images/bIouy.png" class="ornamen" alt="" />
-          <div class="hero-date">Minggu | 28 Juni | 2026</div>
-        </div>
+          <div class="date reveal">
+            <img
+              src="https://s13.gifyu.com/images/bIouy.png"
+              class="ornamen"
+              alt=""
+            />
+            <div class="hero-date">Minggu | 28 Juni | 2026</div>
+          </div>
 
-        <!-- <div class="scroll-hint reveal">
+          <!-- <div class="scroll-hint reveal">
           <svg
             width="14"
             height="26"
@@ -3559,94 +3607,88 @@
           </svg>
           <span>Scroll</span>
         </div> -->
-      </section>
+        </section>
 
-      <!-- COUPLE -->
-      <section id="couple" class="section">
-        <canvas id="couple-canvas"></canvas>
+        <!-- COUPLE -->
+        <section id="couple" class="section">
+          <canvas id="couple-canvas"></canvas>
 
-        <div class="reveal">
-          <div class="sec-label">The Couple</div>
-          <div class="sec-title">Mempelai</div>
-          <div class="sec-sub">Yang Berbahagia</div>
-        </div>
-
-        <div class="couple-card reveal" id="card-groom">
-          <div class="sm-hex-wrap">
-            <div class="sm-hex-border"></div>
-            <div class="sm-hex-inner">
-              <img src="https://s13.gifyu.com/images/bIoIP.jpg" alt="" srcset="" />
-              <div class="hex-shimmer"></div>
-            </div>
+          <div class="reveal">
+            <div class="sec-label">The Couple</div>
+            <div class="sec-title">Mempelai</div>
+            <div class="sec-sub">Yang Berbahagia</div>
           </div>
-          <div>
-            <div class="couple-name">Alvin</div>
-            <div class="couple-fullname">
-              ALVIN NUGRAHA KUSUMA SATYA, S.Sn., M.A.
-            </div>
-            <div class="couple-parents-wrap">
-              <div class="parents-label">Putra dari</div>
-              <div class="parent-entry">
-                <span class="parent-title-tag">Bapak</span>
-                <span class="parent-name-val">M. Yani Hasbullah</span>
-              </div>
-              <div class="parent-entry">
-                <span class="parent-title-tag">Ibu</span>
-                <span class="parent-name-val">Thaybah</span>
+
+          <div class="couple-card reveal" id="card-groom">
+            <div class="sm-hex-wrap">
+              <div class="sm-hex-border"></div>
+              <div class="sm-hex-inner">
+                <img
+                  src="https://s13.gifyu.com/images/bIoIP.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="hex-shimmer"></div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="amp-sep reveal">
-          <div class="aline"></div>
-          <div class="atext">&amp;</div>
-          <div class="aline"></div>
-        </div>
-
-        <div class="couple-card reveal" id="card-bride">
-          <div class="sm-hex-wrap">
-            <div class="sm-hex-border"></div>
-            <div class="sm-hex-inner">
-              <img src="https://s13.gifyu.com/images/bIoIJ.jpg" alt="" srcset="" />
-              <div class="hex-shimmer"></div>
-            </div>
-          </div>
-          <div>
-            <div class="couple-name">Risma</div>
-            <div class="couple-fullname">RISMA DWI SANDRA</div>
-            <div class="couple-parents-wrap">
-              <div class="parents-label">Putri dari</div>
-              <div class="parent-entry">
-                <span class="parent-title-tag">Bapak</span>
-                <span class="parent-name-val">Akhmad</span>
+            <div>
+              <div class="couple-name">Alvin</div>
+              <div class="couple-fullname">
+                ALVIN NUGRAHA KUSUMA SATYA, S.Sn., M.A.
               </div>
-              <div class="parent-entry">
-                <span class="parent-title-tag">Ibu</span>
-                <span class="parent-name-val">Saidah Balkis</span>
+              <div class="couple-parents-wrap">
+                <div class="parents-label">Putra dari</div>
+                <div class="parent-entry">
+                  <span class="parent-title-tag">Bapak</span>
+                  <span class="parent-name-val">M. Yani Hasbullah</span>
+                </div>
+                <div class="parent-entry">
+                  <span class="parent-title-tag">Ibu</span>
+                  <span class="parent-name-val">Thaybah</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+
+          <div class="amp-sep reveal">
+            <div class="aline"></div>
+            <div class="atext">&amp;</div>
+            <div class="aline"></div>
+          </div>
+
+          <div class="couple-card reveal" id="card-bride">
+            <div class="sm-hex-wrap">
+              <div class="sm-hex-border"></div>
+              <div class="sm-hex-inner">
+                <img
+                  src="https://s13.gifyu.com/images/bIoIJ.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div class="hex-shimmer"></div>
+              </div>
+            </div>
+            <div>
+              <div class="couple-name">Risma</div>
+              <div class="couple-fullname">RISMA DWI SANDRA</div>
+              <div class="couple-parents-wrap">
+                <div class="parents-label">Putri dari</div>
+                <div class="parent-entry">
+                  <span class="parent-title-tag">Bapak</span>
+                  <span class="parent-name-val">Akhmad</span>
+                </div>
+                <div class="parent-entry">
+                  <span class="parent-title-tag">Ibu</span>
+                  <span class="parent-name-val">Saidah Balkis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
       <!-- SECTIONS EVENT DETAILS -->
-       <div class="combined-bg">
       <section id="events" class="section" style="padding: 0">
-        <div
-          style="
-            background:
-              linear-gradient(
-                to bottom,
-                rgba(3, 9, 24, 0.7) 0%,
-                transparent 15%
-              ),
-              url(&quot;https://s13.gifyu.com/images/bIouU.png&quot;) no-repeat center top fixed;
-            background-size: cover;
-            padding: 60px 24px 60px;
-            position: relative;
-            overflow: hidden;
-          "
-        >
+        <div style="padding: 60px 24px 60px; position: relative">
           <div style="text-align: center; margin-bottom: 36px">
             <div class="sec-label">Event Details</div>
             <div class="sec-title" style="line-height: 1.4">
@@ -3851,7 +3893,7 @@
                 border-radius: 12px;
                 padding: 22px;
                 margin-bottom: 16px;
-                
+
                 background-color: rgb(4, 14, 40);
                 position: relative;
               "
@@ -4656,219 +4698,229 @@
         </div>
       </section>
       <!-- JOURNEY WRAPPER -->
-      <div
-        style="
-          background: url('https://s13.gifyu.com/images/bIouC.png') no-repeat center top;
-          background-size: cover;
-          position: relative;
-        "
-      >
+      <div style="position: relative">
         <!-- OUR STORY -->
-      <section id="story">
-        <div class="story-header reveal">
-          <div class="sec-label">Our Story</div>
-          <div class="sec-title">Perjalanan Cinta</div>
-        </div>
+        <section id="story">
+          <div class="story-header reveal">
+            <div class="sec-label">Our Story</div>
+            <div class="sec-title">Perjalanan Cinta</div>
+          </div>
 
-        <div class="story-track-outer" id="storyOuter">
-          <div class="story-track" id="storyTrack">
-            <div class="story-slide">
-              <div class="story-slide-bg">
-                <!-- <img src="bg2.svg" alt="" srcset="" /> -->
-              </div>
-              <div class="story-slide-content">
-                <div class="story-photo-wrap reveal rev-zoom">
-                  <div class="story-photo-inner">
-                    <img src="https://s13.gifyu.com/images/bIoqz.jpg" alt="" srcset="" style="transform: scale(1) translateY(-12%);"/>
+          <div class="story-track-outer" id="storyOuter">
+            <div class="story-track" id="storyTrack">
+              <div class="story-slide">
+                <div class="story-slide-bg">
+                  <!-- <img src="bg2.svg" alt="" srcset="" /> -->
+                </div>
+                <div class="story-slide-content">
+                  <div class="story-photo-wrap reveal rev-zoom">
+                    <div class="story-photo-inner">
+                      <img
+                        src="https://s13.gifyu.com/images/bIoqz.jpg"
+                        alt=""
+                        srcset=""
+                        style="transform: scale(1) translateY(-12%)"
+                      />
+                    </div>
+                    <div class="photo-corner-tl"></div>
+                    <div class="photo-corner-br"></div>
                   </div>
-                  <div class="photo-corner-tl"></div>
-                  <div class="photo-corner-br"></div>
-                </div>
-                <div class="text-corner-br"></div>
-                <div class="story-ch-label reveal rev-up">Awal Mula</div>
-                <div class="story-ch-title reveal rev-up d-1">
-                  Keajaiban Kemungkinan<br />Kosmik
-                </div>
+                  <div class="text-corner-br"></div>
+                  <div class="story-ch-label reveal rev-up">Awal Mula</div>
+                  <div class="story-ch-title reveal rev-up d-1">
+                    Keajaiban Kemungkinan<br />Kosmik
+                  </div>
 
-                <div class="story-divider reveal rev-left d-2">
-                  <div class="story-divider-line"></div>
-                  <div class="story-divider-star">✦</div>
-                </div>
+                  <div class="story-divider reveal rev-left d-2">
+                    <div class="story-divider-line"></div>
+                    <div class="story-divider-star">✦</div>
+                  </div>
 
-                <div class="story-body reveal rev-up d-3">
-                  <p>
-                    Menatap luasnya ruang semesta dan panjangnya bentangan
-                    waktu, kami menyadari betapa kecilnya probabilitas dua
-                    manusia untuk saling menemukan. Namun dari triliunan
-                    kemungkinan itu, kami beruntung bisa berbagi kepingan zaman
-                    yang sama untuk saling merengkuh dan mengasihi.
-                  </p>
-                  <p>
-                    Di balik kemegahan takdir kosmis tersebut, perjalanan kami
-                    bermula dari keluguan masa muda — sebuah foto bersama di
-                    ujung masa sekolah yang kini kami kenang sebagai titik
-                    perkenalan, katalis pembuka ruang perbincangan. Berawal dari
-                    resonansi obrolan yang banal, kami perlahan menemukan
-                    cerminan diri.
-                  </p>
-                  <p>
-                    Memilih untuk terus bersama ternyata menuntut lebih dari
-                    sekadar kecocokan awal; ia menuntut kesadaran. Kami belajar
-                    bahwa ritme pertumbuhan tak selalu sama — kecocokan dan
-                    prinsip kompromi inilah yang kemudian menjadi fondasi
-                    hubungan kami.
-                  </p>
+                  <div class="story-body reveal rev-up d-3">
+                    <p>
+                      Menatap luasnya ruang semesta dan panjangnya bentangan
+                      waktu, kami menyadari betapa kecilnya probabilitas dua
+                      manusia untuk saling menemukan. Namun dari triliunan
+                      kemungkinan itu, kami beruntung bisa berbagi kepingan
+                      zaman yang sama untuk saling merengkuh dan mengasihi.
+                    </p>
+                    <p>
+                      Di balik kemegahan takdir kosmis tersebut, perjalanan kami
+                      bermula dari keluguan masa muda — sebuah foto bersama di
+                      ujung masa sekolah yang kini kami kenang sebagai titik
+                      perkenalan, katalis pembuka ruang perbincangan. Berawal
+                      dari resonansi obrolan yang banal, kami perlahan menemukan
+                      cerminan diri.
+                    </p>
+                    <p>
+                      Memilih untuk terus bersama ternyata menuntut lebih dari
+                      sekadar kecocokan awal; ia menuntut kesadaran. Kami
+                      belajar bahwa ritme pertumbuhan tak selalu sama —
+                      kecocokan dan prinsip kompromi inilah yang kemudian
+                      menjadi fondasi hubungan kami.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="story-slide">
-              <div class="story-slide-bg"></div>
+              <div class="story-slide">
+                <div class="story-slide-bg"></div>
 
-              <div class="text-corner-br"></div>
-
-              <div class="story-slide-content">
-                <div class="story-photo-wrap reveal rev-zoom">
-                  <div class="story-photo-inner">
-                    <img src="https://s13.gifyu.com/images/bIoqp.jpg" alt="" srcset="" style="transform: scale(1) translateY(-15%);"/>
-                  </div>
-                  <div class="photo-corner-tl"></div>
-                  <div class="photo-corner-br"></div>
-                </div>
                 <div class="text-corner-br"></div>
 
-                <div class="story-ch-label reveal rev-up">Hubungan</div>
-                <div class="story-ch-title reveal rev-up d-1">
-                  Dialektika Pijar<br />&amp; Gravitasi
-                </div>
+                <div class="story-slide-content">
+                  <div class="story-photo-wrap reveal rev-zoom">
+                    <div class="story-photo-inner">
+                      <img
+                        src="https://s13.gifyu.com/images/bIoqp.jpg"
+                        alt=""
+                        srcset=""
+                        style="transform: scale(1) translateY(-15%)"
+                      />
+                    </div>
+                    <div class="photo-corner-tl"></div>
+                    <div class="photo-corner-br"></div>
+                  </div>
+                  <div class="text-corner-br"></div>
 
-                <div class="story-divider reveal rev-left d-2">
-                  <div class="story-divider-line"></div>
-                  <div class="story-divider-star">✦</div>
-                </div>
+                  <div class="story-ch-label reveal rev-up">Hubungan</div>
+                  <div class="story-ch-title reveal rev-up d-1">
+                    Dialektika Pijar<br />&amp; Gravitasi
+                  </div>
 
-                <div class="story-body reveal rev-up d-3">
-                  <p>
-                    Ikatan kami bisa diibaratkan serupa konstelasi bintang di
-                    langit malam — dua pijar yang berdiri mandiri, terpaut jarak
-                    dan waktu, namun secara sadar menarik garis hubung untuk
-                    membentuk kesatuan makna bersama.
-                  </p>
-                  <p>
-                    Satu dekade sudah kami saling mengorbit; berdiskusi, jatuh
-                    bangun, dan menjadi saksi utuh atas evolusi satu sama lain —
-                    bertumbuh dari masa muda yang naif menjadi dua individu
-                    otonom dengan trayek mimpi yang berbeda, namun tetap setia
-                    pada garis konstelasi yang sama.
-                  </p>
-                  <p>
-                    Ada ribuan ujian yang coba mengintervensi, namun ibarat
-                    hukum alam bahwa "semakin besar massa akan semakin besar
-                    juga daya tariknya" — akumulasi cinta dan pengalaman selalu
-                    membawa kami untuk terus mengorbit dan memilih satu sama
-                    lain. Kami memilih untuk menghadapi dunia yang fana ini
-                    dengan terus menggenggam tangan bersama.
-                  </p>
+                  <div class="story-divider reveal rev-left d-2">
+                    <div class="story-divider-line"></div>
+                    <div class="story-divider-star">✦</div>
+                  </div>
+
+                  <div class="story-body reveal rev-up d-3">
+                    <p>
+                      Ikatan kami bisa diibaratkan serupa konstelasi bintang di
+                      langit malam — dua pijar yang berdiri mandiri, terpaut
+                      jarak dan waktu, namun secara sadar menarik garis hubung
+                      untuk membentuk kesatuan makna bersama.
+                    </p>
+                    <p>
+                      Satu dekade sudah kami saling mengorbit; berdiskusi, jatuh
+                      bangun, dan menjadi saksi utuh atas evolusi satu sama lain
+                      — bertumbuh dari masa muda yang naif menjadi dua individu
+                      otonom dengan trayek mimpi yang berbeda, namun tetap setia
+                      pada garis konstelasi yang sama.
+                    </p>
+                    <p>
+                      Ada ribuan ujian yang coba mengintervensi, namun ibarat
+                      hukum alam bahwa "semakin besar massa akan semakin besar
+                      juga daya tariknya" — akumulasi cinta dan pengalaman
+                      selalu membawa kami untuk terus mengorbit dan memilih satu
+                      sama lain. Kami memilih untuk menghadapi dunia yang fana
+                      ini dengan terus menggenggam tangan bersama.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="story-slide">
-              <div class="story-slide-bg"></div>
+              <div class="story-slide">
+                <div class="story-slide-bg"></div>
 
-              <div class="story-slide-content">
-                <div class="story-photo-wrap reveal rev-zoom">
-                  <div class="story-photo-inner">
-                    <img src="https://s13.gifyu.com/images/bIoqL.jpg" alt="" srcset="" style="transform: scale(1.2) translateY(-9%);"/>
+                <div class="story-slide-content">
+                  <div class="story-photo-wrap reveal rev-zoom">
+                    <div class="story-photo-inner">
+                      <img
+                        src="https://s13.gifyu.com/images/bIoqL.jpg"
+                        alt=""
+                        srcset=""
+                        style="transform: scale(1.2) translateY(-9%)"
+                      />
+                    </div>
+                    <div class="photo-corner-tl"></div>
+                    <div class="photo-corner-br"></div>
                   </div>
-                  <div class="photo-corner-tl"></div>
-                  <div class="photo-corner-br"></div>
+                  <div class="text-corner-br"></div>
+                  <div class="story-ch-label reveal rev-up">Pernikahan</div>
+                  <div class="story-ch-title reveal rev-up d-1">
+                    Sauh dan Suar<br />di Lautan Kefanaan
+                  </div>
+
+                  <div class="story-divider reveal rev-left d-2">
+                    <div class="story-divider-line"></div>
+                    <div class="story-divider-star">✦</div>
+                  </div>
+
+                  <div class="story-body reveal rev-up d-3">
+                    <p>
+                      Sebuah konstelasi bintang di langit malam tidak tercipta
+                      sekadar untuk dikagumi; selama ribuan tahun, ia menjadi
+                      panduan navigasi bagi para pelaut untuk membelah samudra
+                      yang tak bertepi.
+                    </p>
+                    <p>
+                      Bagi kami, pernikahan adalah keputusan sadar untuk
+                      membumikan ikatan tersebut—menerjemahkan konstelasi kami
+                      ke dalam sebuah pelayaran yang nyata dan sakral. Pada 28
+                      Juni 2026, kami mengikrarkan janji untuk mulai berlayar
+                      mengarungi lautan masa depan.
+                    </p>
+                    <p>
+                      Kami menyadari bahwa lautan realitas di luar sana sering
+                      kali dingin, luas, dan rentan. Karena itulah, sebelum
+                      berlayar lebih jauh, kami sepakat untuk mendirikan sebuah
+                      ruang kompromi yang kokoh diterjang ombak dan badai,
+                      laksana mercusuar. Jika konstelasi kami berfungsi untuk
+                      memandu arah kapal saat mengejar mimpi di tengah lautan
+                      lepas, maka mercusuar ini adalah penanda jalan pulang. Ia
+                      hadir agar sejauh apa pun ombak membawa kami pergi, kami
+                      tidak akan pernah tersesat; kami selalu tahu cara untuk
+                      berlabuh, kembali, dan menemukan diri kami lagi dalam satu
+                      sama lain.
+                    </p>
+                  </div>
                 </div>
                 <div class="text-corner-br"></div>
-                <div class="story-ch-label reveal rev-up">
-                  Pernikahan
-                </div>
-                <div class="story-ch-title reveal rev-up d-1">
-                  Sauh dan Suar<br />di Lautan Kefanaan
-                </div>
-
-                <div class="story-divider reveal rev-left d-2">
-                  <div class="story-divider-line"></div>
-                  <div class="story-divider-star">✦</div>
-                </div>
-
-                <div class="story-body reveal rev-up d-3">
-                  <p>
-                    Sebuah konstelasi bintang di langit malam tidak tercipta
-                    sekadar untuk dikagumi; selama ribuan tahun, ia menjadi
-                    panduan navigasi bagi para pelaut untuk membelah samudra
-                    yang tak bertepi.
-                  </p>
-                  <p>
-                    Bagi kami, pernikahan adalah keputusan sadar untuk
-                    membumikan ikatan tersebut—menerjemahkan konstelasi kami ke
-                    dalam sebuah pelayaran yang nyata dan sakral. Pada 28 Juni 2026, kami mengikrarkan janji untuk mulai
-                    berlayar mengarungi lautan masa depan.
-                  </p>
-                  <p>
-                    Kami menyadari bahwa lautan realitas di luar sana sering kali dingin, luas, dan
-                    rentan. Karena itulah, sebelum berlayar lebih jauh, kami
-                    sepakat untuk mendirikan sebuah ruang kompromi yang kokoh
-                    diterjang ombak dan badai, laksana mercusuar. Jika
-                    konstelasi kami berfungsi untuk memandu arah kapal saat
-                    mengejar mimpi di tengah lautan lepas, maka mercusuar ini
-                    adalah penanda jalan pulang. Ia hadir agar sejauh apa pun
-                    ombak membawa kami pergi, kami tidak akan pernah tersesat;
-                    kami selalu tahu cara untuk berlabuh, kembali, dan menemukan
-                    diri kami lagi dalam satu sama lain.
-                  </p>
-                </div>
               </div>
-              <div class="text-corner-br"></div>
             </div>
           </div>
-        </div>
 
-        <div class="story-nav">
-          <div class="story-arrow" id="storyPrev" onclick="storySlide(-1)">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <polyline points="15,18 9,12 15,6" />
-            </svg>
+          <div class="story-nav">
+            <div class="story-arrow" id="storyPrev" onclick="storySlide(-1)">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <polyline points="15,18 9,12 15,6" />
+              </svg>
+            </div>
+            <div class="story-dots">
+              <div class="story-dot active" onclick="storyGo(0)"></div>
+              <div class="story-dot" onclick="storyGo(1)"></div>
+              <div class="story-dot" onclick="storyGo(2)"></div>
+            </div>
+            <div class="story-arrow" id="storyNext" onclick="storySlide(1)">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <polyline points="9,18 15,12 9,6" />
+              </svg>
+            </div>
           </div>
-          <div class="story-dots">
-            <div class="story-dot active" onclick="storyGo(0)"></div>
-            <div class="story-dot" onclick="storyGo(1)"></div>
-            <div class="story-dot" onclick="storyGo(2)"></div>
-          </div>
-          <div class="story-arrow" id="storyNext" onclick="storySlide(1)">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <polyline points="9,18 15,12 9,6" />
-            </svg>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
       <!-- GALLERY -->
       <section id="gallery" class="section" style="padding: 0">
         <div
           style="
-            background: url('https://s13.gifyu.com/images/bIouC.png') no-repeat center top;
+            background: url(&quot;https://s13.gifyu.com/images/bIouC.png&quot;)
+              no-repeat center top;
             background-size: cover;
             padding: 80px 0 200px;
             position: relative;
@@ -4883,7 +4935,11 @@
               left: 0;
               width: 100%;
               height: 200px;
-              background: linear-gradient(to bottom, var(--navy) 0%, transparent 100%);
+              background: linear-gradient(
+                to bottom,
+                var(--navy) 0%,
+                transparent 100%
+              );
               z-index: 2;
               pointer-events: none;
             "
@@ -4950,7 +5006,12 @@
                   style="width: 168px; height: 168px; top: -2px; left: -2px"
                 ></div>
                 <div class="hex-inner" style="width: 164px; height: 164px">
-                  <img src="https://s13.gifyu.com/images/bIoqH.jpg" alt="" srcset="" style="transform: translateY(-8%);"/>
+                  <img
+                    src="https://s13.gifyu.com/images/bIoqH.jpg"
+                    alt=""
+                    srcset=""
+                    style="transform: translateY(-8%)"
+                  />
                   <svg
                     width="28"
                     height="28"
@@ -5027,7 +5088,12 @@
                   style="width: 168px; height: 168px; top: -2px; left: -2px"
                 ></div>
                 <div class="hex-inner" style="width: 164px; height: 164px">
-                  <img src="https://s13.gifyu.com/images/bIoqx.jpg" alt="" srcset="" style="transform: translateY(-4%);"/>
+                  <img
+                    src="https://s13.gifyu.com/images/bIoqx.jpg"
+                    alt=""
+                    srcset=""
+                    style="transform: translateY(-4%)"
+                  />
                   <svg
                     width="28"
                     height="28"
@@ -5103,7 +5169,12 @@
                   style="width: 168px; height: 168px; top: -2px; left: -2px"
                 ></div>
                 <div class="hex-inner" style="width: 164px; height: 164px">
-                  <img src="https://s13.gifyu.com/images/bIoqM.jpg" alt="" srcset="" style="transform: scale(2) translateY(-21%);"/>
+                  <img
+                    src="https://s13.gifyu.com/images/bIoqM.jpg"
+                    alt=""
+                    srcset=""
+                    style="transform: scale(2) translateY(-21%)"
+                  />
                   <svg
                     width="28"
                     height="28"
@@ -5179,7 +5250,12 @@
                   style="width: 168px; height: 168px; top: -2px; left: -2px"
                 ></div>
                 <div class="hex-inner" style="width: 164px; height: 164px">
-                  <img src="https://s13.gifyu.com/images/bIoqs.jpg" alt="" srcset="" style="transform: scale(1.2) translateY(-11%);"/>
+                  <img
+                    src="https://s13.gifyu.com/images/bIoqs.jpg"
+                    alt=""
+                    srcset=""
+                    style="transform: scale(1.2) translateY(-11%)"
+                  />
                   <svg
                     width="28"
                     height="28"
@@ -5245,30 +5321,45 @@
             "
           >
             <!-- 1. Ombak  -->
-             <div class="ombakwrap"
-  style="
-
-    overflow: hidden;
-  "
->
-  <div
-    style="
-      display: flex;
-      width: 200%;
-      animation: seaMove 120s linear infinite;
-      opacity: 0.7;
-      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-      -webkit-mask-size: 50% 100%;
-      -webkit-mask-repeat: repeat-x;
-      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-      mask-size: 50% 100%;
-      mask-repeat: repeat-x;
-    "
-  >
-    <img src="https://s13.gifyu.com/images/bI1pl.png" style="width: 50%; display:block;" alt="" />
-    <img src="https://s13.gifyu.com/images/bI1pl.png" style="width: 50%; display:block;" alt="" />
-  </div>
-</div>
+            <div class="ombakwrap" style="overflow: hidden">
+              <div
+                style="
+                  display: flex;
+                  width: 200%;
+                  animation: seaMove 120s linear infinite;
+                  opacity: 0.7;
+                  -webkit-mask-image: linear-gradient(
+                    to right,
+                    transparent 0%,
+                    black 8%,
+                    black 92%,
+                    transparent 100%
+                  );
+                  -webkit-mask-size: 50% 100%;
+                  -webkit-mask-repeat: repeat-x;
+                  mask-image: linear-gradient(
+                    to right,
+                    transparent 0%,
+                    black 8%,
+                    black 92%,
+                    transparent 100%
+                  );
+                  mask-size: 50% 100%;
+                  mask-repeat: repeat-x;
+                "
+              >
+                <img
+                  src="https://s13.gifyu.com/images/bI1pl.png"
+                  style="width: 50%; display: block"
+                  alt=""
+                />
+                <img
+                  src="https://s13.gifyu.com/images/bI1pl.png"
+                  style="width: 50%; display: block"
+                  alt=""
+                />
+              </div>
+            </div>
 
             <!-- 2. Mercusuar -->
             <div
@@ -5305,10 +5396,7 @@
             <img
               src="https://s13.gifyu.com/images/bIouO.png"
               class="kapal"
-              style="
-                width: 10%;
-
-              "
+              style="width: 10%"
               alt=""
             />
 
@@ -5475,7 +5563,6 @@
           </div>
         </section>
       </div>
-    
     </div>
 
     <!-- BOTTOM NAV OUT MAIN-->
@@ -5519,7 +5606,8 @@
       var playing = false;
       var toastTimer;
 
-      audio.src = "https://dl.dropboxusercontent.com/scl/fi/516qndt6w1h9ws7es81ib/musik.mp3?rlkey=8sshxmp8xv96wk38dkiultcwr&st=bt7d5p5y&dl=0";
+      audio.src =
+        "https://dl.dropboxusercontent.com/scl/fi/516qndt6w1h9ws7es81ib/musik.mp3?rlkey=8sshxmp8xv96wk38dkiultcwr&st=bt7d5p5y&dl=0";
       (function () {
         const p = new URLSearchParams(window.location.search);
         const t = p.get("to");
@@ -5617,8 +5705,22 @@
       }
 
       document.getElementById("main").addEventListener("scroll", function () {
-        const sections = ["hero", "couple", "events", "countdown", "story", "gallery"];
-        const navMap = { hero: 0, couple: 1, events: 2, countdown: 2, story: 3, gallery: 3 };
+        const sections = [
+          "hero",
+          "couple",
+          "events",
+          "countdown",
+          "story",
+          "gallery",
+        ];
+        const navMap = {
+          hero: 0,
+          couple: 1,
+          events: 2,
+          countdown: 2,
+          story: 3,
+          gallery: 3,
+        };
         let current = "hero";
 
         const mainRect = this.getBoundingClientRect();
