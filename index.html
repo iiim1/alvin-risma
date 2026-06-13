@@ -52,8 +52,11 @@
         transform: translateY(0);
       }
       #cover.slide-away {
-        transform: translateY(-110%);
-        transition: transform 0.9s cubic-bezier(0.76, 0, 0.24, 1);
+        transform: translateY(120vh);
+        visibility: hidden; /* Tambahan */
+        transition:
+          transform 0.9s cubic-bezier(0.76, 0, 0.24, 1),
+          visibility 0s linear 0.9s;
         pointer-events: none;
       }
 
@@ -5669,6 +5672,9 @@
 
           showMusicBtn();
           tryPlayMusic();
+          setTimeout(() => {
+            cover.style.display = "none";
+          }, 900);
         });
 
       function initReveal() {
