@@ -599,21 +599,11 @@
       #couple {
         position: relative;
         overflow: hidden;
-        /* background: url("https://s13.gifyu.com/images/bIouF.png") no-repeat center top fixed;
-        background-size: cover; */
+        background: url("https://s13.gifyu.com/images/bIouF.png") no-repeat center top fixed;
+        background-size: cover;
         padding-bottom: 100px;
       }
-#couple::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--navy));
-  pointer-events: none;
-  z-index: 2;
-}
+
       .couple-card {
         display: flex;
         flex-direction: column;
@@ -1257,7 +1247,7 @@
         border-color: var(--gold);
         color: var(--gold);
         background: rgba(215, 181, 109, 0.1);
-      } 
+      }
       .story-arrow[disabled] {
         opacity: 0.25;
         pointer-events: none;
@@ -1374,9 +1364,8 @@
         justify-content: center;
         padding: 60px 24px 100px;
         overflow: hidden;
-        background: url("https://s13.gifyu.com/images/bIouU.png") no-repeat center top / cover;
-        /* background: url("https://s13.gifyu.com/images/bIouU.png") no-repeat center top fixed;
-        background-size: cover; */
+        background: url("https://s13.gifyu.com/images/bIouU.png") no-repeat center top fixed;
+        background-size: cover;
         position: relative;
         overflow: hidden;
       }
@@ -3479,8 +3468,6 @@
 
     <!-- MAIN -->
     <div id="main">
-        <div id="bg-couple-layer"   style="position:fixed;inset:0;z-index:0;pointer-events:none;background:url('https://s13.gifyu.com/images/bIouF.png') no-repeat center top/cover;opacity:0;transition:opacity 0.6s;"></div>
-  <div id="bg-countdown-layer" style="position:fixed;inset:0;z-index:0;pointer-events:none;background:url('https://s13.gifyu.com/images/bIouU.png') no-repeat center top/cover;opacity:0;transition:opacity 0.6s;"></div>
       <audio id="audio" loop preload="none"></audio>
       <div id="toast"></div>
       <button id="musicBtn" onclick="toggleMusic()" aria-label="Toggle music">
@@ -3639,10 +3626,14 @@
       <section id="events" class="section" style="padding: 0">
         <div
           style="
-background:
-  linear-gradient(to bottom, rgba(3, 9, 24, 0.7) 0%, transparent 30%),
-  linear-gradient(to top, rgba(3, 9, 24, 0.9) 0%, transparent 30%),
-  url('https://s13.gifyu.com/images/bIouU.png') no-repeat center top / cover;
+            background:
+              linear-gradient(
+                to bottom,
+                rgba(3, 9, 24, 0.7) 0%,
+                transparent 15%
+              ),
+              url(&quot;https://s13.gifyu.com/images/bIouU.png&quot;) no-repeat center top fixed;
+            background-size: cover;
             padding: 60px 24px 60px;
             position: relative;
             overflow: hidden;
@@ -5577,12 +5568,10 @@ background:
           document.getElementById("cover").classList.add("slide-away");
           document.getElementById("main").classList.add("on");
           document.getElementById("bottom-nav").classList.add("on");
-  setTimeout(function () {
-    cover.style.display = "none";
-  }, 1000); // 1000ms = setelah animasi slide 0.9s selesai
-  setTimeout(initReveal, 350);
-  showMusicBtn();
-  tryPlayMusic();
+          setTimeout(initReveal, 350);
+
+          showMusicBtn();
+          tryPlayMusic();
         });
 
       function initReveal() {
@@ -5605,26 +5594,6 @@ background:
             el.classList.add("visible");
         });
       }
-      (function () {
-  const bgCouple    = document.getElementById("bg-couple-layer");
-  const bgCountdown = document.getElementById("bg-countdown-layer");
-  const main        = document.getElementById("main");
-
-  function updateBg() {
-    const coupleRect    = document.getElementById("couple")?.getBoundingClientRect();
-    const countdownRect = document.getElementById("countdown")?.getBoundingClientRect();
-    const h             = window.innerHeight;
-
-    const inCouple    = coupleRect    && coupleRect.top < h && coupleRect.bottom > 0;
-    const inCountdown = countdownRect && countdownRect.top < h && countdownRect.bottom > 0;
-
-    bgCouple.style.opacity    = inCouple    ? "1" : "0";
-    bgCountdown.style.opacity = inCountdown ? "1" : "0";
-  }
-
-  main.addEventListener("scroll", updateBg, { passive: true });
-  document.getElementById("main").addEventListener("scroll", updateBg, { passive: true });
-})();
 
       function goTo(id, el) {
         const main = document.getElementById("main");
