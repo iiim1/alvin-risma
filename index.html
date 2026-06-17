@@ -653,7 +653,7 @@
       }
       .sm-hex-inner img {
         width: 100%;
-        height: 100%;
+        /* height: 100%; */
         object-fit: cover;
       }
 
@@ -2768,92 +2768,52 @@
         }
       } */
 
-      .shooting-star {
+     .shooting-star {
         position: absolute;
-        width: 120px;
-        height: 1.5px;
+        width: 1.5px;       
+        height: 80px;        
         background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.9),
-          transparent
+          180deg,             
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.9)
         );
         border-radius: 2px;
         opacity: 0;
       }
+
       .shooting-star.s1 {
-        top: 10%;
-        left: 15%;
-        transform: rotate(-30deg);
-        animation: shoot 8s linear infinite;
+        top: -10%;
+        left: 20%;
+        transform: rotate(5deg);   
+        animation: shootDown 8s linear infinite;
       }
       .shooting-star.s2 {
-        top: 22%;
+        top: -10%;
         left: 55%;
-        transform: rotate(-25deg);
-        animation: shoot 8s 3.2s linear infinite;
+        transform: rotate(-4deg);  
+        animation: shootDown 8s 3.2s linear infinite;
       }
       .shooting-star.s3 {
-        top: 8%;
-        left: 70%;
-        transform: rotate(-35deg);
-        animation: shoot 8s 5.8s linear infinite;
+        top: -10%;
+        left: 75%;
+        transform: rotate(6deg);
+        animation: shootDown 8s 5.8s linear infinite;
       }
-      @keyframes shoot {
-        0% {
-          opacity: 0;
-          transform: translateX(0) rotate(-30deg);
-        }
-        5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 0;
-          transform: translateX(160px) rotate(-30deg);
-        }
-        100% {
-          opacity: 0;
-          transform: translateX(160px) rotate(-30deg);
-        }
+
+      .shooting-star.s1 { --tilt: 5deg; }
+      .shooting-star.s2 { --tilt: -4deg; }
+      .shooting-star.s3 { --tilt: 6deg; }
+
+      @keyframes shootDown {
+        0%   { opacity: 0; transform: translateY(0)      rotate(var(--tilt)); }
+        5%   { opacity: 1; }
+        40%  { opacity: 0; transform: translateY(120vh)  rotate(var(--tilt)); }
+        100% { opacity: 0; transform: translateY(120vh)  rotate(var(--tilt)); }
       }
-      .shooting-star.s2 {
-        animation-name: shoot2;
-      }
-      @keyframes shoot2 {
-        0% {
-          opacity: 0;
-          transform: translateX(0) rotate(-25deg);
-        }
-        5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 0;
-          transform: translateX(160px) rotate(-25deg);
-        }
-        100% {
-          opacity: 0;
-          transform: translateX(160px) rotate(-25deg);
-        }
-      }
-      .shooting-star.s3 {
-        animation-name: shoot3;
-      }
-      @keyframes shoot3 {
-        0% {
-          opacity: 0;
-          transform: translateX(0) rotate(-35deg);
-        }
-        5% {
-          opacity: 1;
-        }
-        25% {
-          opacity: 0;
-          transform: translateX(160px) rotate(-35deg);
-        }
-        100% {
-          opacity: 0;
-          transform: translateX(160px) rotate(-35deg);
-        }
+
+      .shooting-star {
+        animation-name: shootDown;
       }
 
       .constellation {
@@ -3540,9 +3500,9 @@
             <div class="hex-border-ring"></div>
             <div class="hex-inner">
               <img
-                src="https://s13.gifyu.com/images/bIoqT.jpg"
+                src="https://s13.gifyu.com/images/bd2Bm.jpg"
                 alt="Foto Alvin & Risma"
-                style="transform: scale(1) translateY(-13%)"
+                style="transform: scale(1.2) translateY(-17%)"
               />
             </div>
             <div class="hex-top-ornament">◆</div>
@@ -3552,7 +3512,7 @@
             <div class="hero-names">
               ALVIN <span class="amp">&amp;</span> RISMA
             </div>
-            <div class="hero-tagline">Dua Bintang, Satu Semesta</div>
+            <div class="hero-tagline">Dua Pijar, Satu Semesta</div>
           </div>
           <div class="date reveal">
             <img
@@ -3596,9 +3556,10 @@
               <div class="sm-hex-border"></div>
               <div class="sm-hex-inner">
                 <img
-                  src="https://s13.gifyu.com/images/bIoIP.jpg"
+                  src="https://s13.gifyu.com/images/bd2B4.jpg"
                   alt=""
                   srcset=""
+                  style="transform: translateX(6%) translateY(-4%);"
                 />
                 <div class="hex-shimmer"></div>
               </div>
@@ -3633,9 +3594,10 @@
               <div class="sm-hex-border"></div>
               <div class="sm-hex-inner">
                 <img
-                  src="https://s13.gifyu.com/images/bIoIJ.jpg"
+                  src="https://s13.gifyu.com/images/bd2B6.jpg"
                   alt=""
                   srcset=""
+                  style="transform: translateX(3%) translateY(9%);"
                 />
                 <div class="hex-shimmer"></div>
               </div>
@@ -3843,7 +3805,7 @@
                       color: rgba(255, 255, 255, 0.8);
                     "
                   >
-                    Masjid Islamic Center
+                    Gedung Anggi &ndash; Islamic Center
                   </div>
                   <div
                     style="
@@ -4138,120 +4100,53 @@
                   </filter>
                 </defs>
                 <rect width="340" height="220" fill="#040e28" />
+                <image href="https://s13.gifyu.com/images/bd2Pc.png" x="0" y="0" width="340" height="220" preserveAspectRatio="xMidYMid slice" opacity="0.3"
+                  style="mix-blend-mode: screen;" />
                 <ellipse
-                  cx="170"
+                  cx="140"
                   cy="110"
                   rx="130"
                   ry="90"
                   fill="url(#mapglow2)"
                 />
-                <circle cx="30" cy="25" r="0.8" fill="#d7b56d" opacity="0.5" />
-                <circle cx="310" cy="40" r="1" fill="#fff" opacity="0.3" />
-                <circle cx="15" cy="100" r="0.7" fill="#fff" opacity="0.25" />
-                <circle
-                  cx="325"
-                  cy="150"
-                  r="0.9"
-                  fill="#d7b56d"
-                  opacity="0.4"
-                />
-                <circle cx="50" cy="190" r="0.7" fill="#fff" opacity="0.3" />
-                <circle
-                  cx="290"
-                  cy="200"
-                  r="0.8"
-                  fill="#d7b56d"
-                  opacity="0.35"
-                />
-                <path
-                  d="M 80 50 Q 95 60 90 80 Q 85 100 100 115 Q 115 130 110 150 Q 105 170 120 185"
-                  stroke="rgba(215,181,109,0.25)"
-                  stroke-width="0.8"
-                  fill="none"
-                />
-                <path
-                  d="M 110 45 Q 120 65 130 75 Q 140 85 135 105 Q 130 125 145 135 Q 160 145 155 165 Q 150 175 160 190"
-                  stroke="rgba(215,181,109,0.2)"
-                  stroke-width="0.6"
-                  fill="none"
-                />
-                <path
-                  d="M 150 30 Q 165 55 170 75 Q 175 95 165 110 Q 155 125 170 140 Q 185 155 180 175 Q 178 185 175 195"
-                  stroke="rgba(215,181,109,0.22)"
-                  stroke-width="0.7"
-                  fill="none"
-                />
-                <path
-                  d="M 200 35 Q 210 60 205 80 Q 200 100 215 115 Q 230 130 225 150 Q 220 168 230 182"
-                  stroke="rgba(215,181,109,0.18)"
-                  stroke-width="0.6"
-                  fill="none"
-                />
-                <path
-                  d="M 240 50 Q 250 70 245 90 Q 238 115 252 130 Q 262 142 258 160 Q 254 175 262 188"
-                  stroke="rgba(215,181,109,0.2)"
-                  stroke-width="0.5"
-                  fill="none"
-                />
-                <path
-                  d="M 80 50 Q 100 48 110 45 Q 130 42 150 30 Q 175 25 200 35 Q 220 38 240 50"
-                  stroke="rgba(215,181,109,0.2)"
-                  stroke-width="0.6"
-                  fill="none"
-                />
-                <path
-                  d="M 100 115 Q 120 112 135 105 Q 152 98 165 110 Q 180 120 215 115 Q 230 112 245 90"
-                  stroke="rgba(215,181,109,0.18)"
-                  stroke-width="0.5"
-                  fill="none"
-                />
-                <path
-                  d="M 110 150 Q 132 147 145 135 Q 162 122 170 140 Q 178 155 220 168 Q 232 172 230 182"
-                  stroke="rgba(215,181,109,0.15)"
-                  stroke-width="0.5"
-                  fill="none"
-                />
-                <circle
-                  cx="170"
-                  cy="122"
-                  r="28"
-                  fill="url(#starglow2)"
-                  opacity="0.5"
-                />
-                <circle
-                  cx="170"
-                  cy="122"
-                  r="18"
-                  fill="rgba(215,181,109,0.05)"
-                  stroke="rgba(215,181,109,0.2)"
-                  stroke-width="0.8"
-                  stroke-dasharray="4 3"
-                />
-                <circle
-                  cx="170"
-                  cy="122"
-                  r="10"
-                  fill="rgba(215,181,109,0.08)"
-                  stroke="rgba(215,181,109,0.3)"
-                  stroke-width="0.8"
-                />
-                <g transform="translate(170,122)" filter="url(#mglow)">
-                  <polygon
-                    points="0,-9 2.1,-3 8.6,-2.8 3.5,1.1 5.3,7.6 0,4 -5.3,7.6 -3.5,1.1 -8.6,-2.8 -2.1,-3"
-                    fill="#d7b56d"
-                  />
+                
+                <circle cx="144" cy="129" r="32" fill="url(#starglow2)" opacity="0.5" />
+                <circle cx="144" cy="129" r="22" fill="rgba(215,181,109,0.05)" stroke="rgba(215,181,109,0.2)" stroke-width="0.8"
+                  stroke-dasharray="4 3" />
+                <circle cx="144" cy="129" r="15" fill="rgba(215,181,109,0.08)" stroke="rgba(215,181,109,0.3)" stroke-width="0.8" />
+
+                <!-- Ganti polygon bintang dengan ikon masjid -->
+                <g transform="translate(130, 130) rotate(-50) scale(0.055)" filter="url(#mglow)">
+                  <rect x="0" y="80" width="30" height="210" fill="#d7b56d" />
+                  <path d="M0 80 Q15 50 30 80 Z" fill="#d7b56d" />
+                  <rect x="55" y="110" width="24" height="180" fill="#d7b56d" />
+                  <path d="M55 110 Q67 85 79 110 Z" fill="#d7b56d" />
+                  <path d="M90 175 Q90 140 108 132 Q126 140 126 175 Z" fill="#d7b56d" />
+                  <path d="M126 195 Q126 120 185 105 Q244 120 244 195 Z" fill="#d7b56d" />
+                  <path d="M244 175 Q244 140 262 132 Q280 140 280 175 Z" fill="#d7b56d" />
+                  <rect x="291" y="110" width="24" height="180" fill="#d7b56d" />
+                  <path d="M291 110 Q303 85 315 110 Z" fill="#d7b56d" />
+                  <rect x="340" y="80" width="30" height="210" fill="#d7b56d" />
+                  <path d="M340 80 Q355 50 370 80 Z" fill="#d7b56d" />
+                  <rect x="88" y="175" width="195" height="115" fill="#d7b56d" />
+                  <path d="M115 290 L115 245 Q128 233 141 245 L141 290 Z" fill="#040e28" />
+                  <path d="M150 290 L150 245 Q163 233 176 245 L176 290 Z" fill="#040e28" />
+                  <path d="M185 290 L185 245 Q198 233 211 245 L211 290 Z" fill="#040e28" />
+                  <path d="M220 290 L220 245 Q233 233 246 245 L246 290 Z" fill="#040e28" />
+                  <line x1="185" y1="105" x2="185" y2="85" stroke="#d7b56d" stroke-width="4" />
+                  <path d="M178 80 Q186 72 194 80 Q186 84 178 80 Z" fill="#d7b56d" />
                 </g>
                 <line
-                  x1="168"
+                  x1="138"
                   y1="99"
-                  x2="168"
+                  x2="138"
                   y2="72"
                   stroke="rgba(215,181,109,0.5)"
                   stroke-width="0.8"
                   stroke-dasharray="3 2"
                 />
                 <rect
-                  x="128"
+                  x="98"
                   y="54"
                   width="80"
                   height="18"
@@ -4261,7 +4156,7 @@
                   stroke-width="0.8"
                 />
                 <text
-                  x="168"
+                  x="138"
                   y="67"
                   text-anchor="middle"
                   font-family="Cinzel, serif"
@@ -4979,10 +4874,10 @@
                 ></div>
                 <div class="hex-inner" style="width: 164px; height: 164px">
                   <img
-                    src="https://s13.gifyu.com/images/bIoqH.jpg"
+                    src="https://s13.gifyu.com/images/bd2Bi.jpg"
                     alt=""
                     srcset=""
-                    style="transform: translateY(-8%)"
+                    style="transform: translateY(-11%)"
                   />
                   <svg
                     width="28"
@@ -5061,10 +4956,10 @@
                 ></div>
                 <div class="hex-inner" style="width: 164px; height: 164px">
                   <img
-                    src="https://s13.gifyu.com/images/bIoqx.jpg"
+                    src="https://s13.gifyu.com/images/bd2BR.jpg"
                     alt=""
                     srcset=""
-                    style="transform: translateY(-4%)"
+                    style="transform: translateY(2%)"
                   />
                   <svg
                     width="28"
@@ -5579,7 +5474,7 @@
       var toastTimer;
 
       audio.src =
-        "https://dl.dropboxusercontent.com/scl/fi/516qndt6w1h9ws7es81ib/musik.mp3?rlkey=8sshxmp8xv96wk38dkiultcwr&st=bt7d5p5y&dl=0";
+        "https://dl.dropboxusercontent.com/scl/fi/rc5ikfm7ql9tu1inhycgp/copy_B2480933-F8B6-4E75-A5C4-F05478B76A94-1.mp3?rlkey=82jttkbypdqlrcxr4kuzm2bdb&st=o6akjnxi&dl=1";
       (function () {
         const p = new URLSearchParams(window.location.search);
         const t = p.get("to");
